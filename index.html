@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatBot con Gemini</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    #chat {
+      width: 100%;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    #respuesta {
+      min-height: 200px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 10px;
+      background: #fafafa;
+      overflow-y: auto;
+    }
+    #prompt {
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    #enviar {
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    #enviar:hover {
+      background: #0056b3;
+    }
+  </style>
+
+  <!-- 🚀 MathJax para renderizar fórmulas -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+  <h1>Chat con Gemini</h1>
+  <div id="chat">
+    <input id="prompt" type="text" placeholder="Escribe tu pregunta...">
+    <button id="enviar">Enviar</button>
+    <div id="respuesta"></div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
